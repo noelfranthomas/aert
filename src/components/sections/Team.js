@@ -2,40 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import TeamLottie from '../lottieAnims/TeamLottie';
 
 import { Section, Container } from '@components/global';
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
-    role: 'Founder',
-  },
-  {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
-  },
-  {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
-  },
-  {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
-  },
-  {
-    name: 'Martin White',
+    name: 'Noel Thomas',
     image: 'martin.jpg',
-    role: 'Backend Engineer',
-  },
-  {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
-  },
+    role: 'Fullstack Engineer',
+  }
 ];
 
 const Team = () => (
@@ -86,7 +62,7 @@ const Team = () => (
             })}
           </TeamGrid>
           <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <TeamLottie />
           </Art>
           <ArtMobile>
             <Img fluid={data.art_team.childImageSharp.fluid} />

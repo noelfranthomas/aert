@@ -1,12 +1,14 @@
 import React from 'react';
 
+import { ReactComponent as NumberDiagram } from '@images/diagrams/onetwothree.svg';
+
 import { Section, Container } from '@components/global';
 
 import FaqItem from '@common/FaqItem';
 
-const FAQS = [
+const STEPS = [
   {
-    title: 'Why choose Argo?',
+    title: '1 - Design',
     content: () => (
       <>
         The team at Argo is well-versed in creating fast, responsive, and lightweight
@@ -17,7 +19,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'How does a website support my business?',
+    title: '2 - Build',
     content: () => (
       <>
         A website is the easiest way for customers to find, discover, and share about
@@ -27,7 +29,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'How quickly can I get a site up?',
+    title: '3 - Deploeveve',
     content: () => (
       <>
         Argo's team is dedicated to our clients. However, the time it takes to design, 
@@ -37,19 +39,27 @@ const FAQS = [
   },
 ];
 
-const Faq = () => (
-  <Section id="faq">
-    <Container>
-      <h1 style={{ marginBottom: 40 }}>Frequently Asked Questions</h1>
-      <div>
-        {FAQS.map(({ title, content }) => (
-          <FaqItem title={title} key={title}>
-            {content()}
-          </FaqItem>
-        ))}
-      </div>
-    </Container>
-  </Section>
-);
+function Approach(){
+    return(
+      <Section id="approach" accent="secondary">
+        <Container>
+        <h2 style={{margin: "0 0 40px 0.5em"}}>Our Approach:</h2>
+            <div style={{textAlign: "center", display: "flex", alignContent: "center", flexFlow: "column wrap"}}>
+              <NumberDiagram />
+              <br />
+              <br />
+              <h3>Simple. Fast. Brilliant.</h3>
+            </div>
+        <div>
+          {STEPS.map(({ title, content }) => (
+            <FaqItem title={title} key={title}>
+              {content()}
+            </FaqItem>
+          ))}
+        </div>
+        </Container>
+      </Section>
+    )
+}
 
-export default Faq;
+export default Approach;

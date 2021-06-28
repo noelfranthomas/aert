@@ -6,37 +6,18 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@images/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@images/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@images/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@images/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@images/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
+import { ReactComponent as SFSYLogo } from '@images/logos/SFSYsimple.svg';
+import { ReactComponent as AASEELogo } from '@images/logos/AASEEsimple.svg';
+
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
+    logo: SFSYLogo,
+    link: 'https://www.starsforshelteredyouth.com/',
   },
   {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
-  },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
+    logo: AASEELogo,
+    link: 'https://www.figma.com/file/hKWAJmeImxPfm90kCMOTmY/AASEE?node-id=3%3A2',
   },
 ];
 
@@ -57,10 +38,10 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="projects" accent>
         <StyledContainer>
           <div>
-            <h1>Used by biggest in tech</h1>
+            <h2>The same team that brought you:</h2>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
@@ -68,6 +49,14 @@ const UsedBy = () => (
                 </ExternalLink>
               ))}
             </LogoGrid>
+
+            <div style={{textAlign: "center", margin: "40px 0 0 0"}}>Check out more on {' '}
+            <StyledExternalLink href="https://github.com/noelfranthomas">
+                  Github
+            </StyledExternalLink>
+            .
+            </div>
+
           </div>
           <Art>
             <Img fluid={data.art_story.childImageSharp.fluid} />
@@ -120,6 +109,15 @@ const Art = styled.figure`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     display: none;
+  }
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: ${props => props.theme.color.black.regular};
   }
 `;
 

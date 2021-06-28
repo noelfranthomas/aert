@@ -31,11 +31,11 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Fast in
+                Empowering
                 <br />
-                every way
+                small businesses
                 <br />
-                that matters
+                in Calgary.
               </h1>
               <br />
               <p>
