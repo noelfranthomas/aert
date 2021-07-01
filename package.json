@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Noel Fran Thomas",
   "dependencies": {
+    "@loadable/component": "^5.15.0",
     "@lottiefiles/lottie-interactivity": "^0.1.4",
     "@lottiefiles/lottie-player": "^1.0.6",
     "@svgr/webpack": "^4.1.0",
