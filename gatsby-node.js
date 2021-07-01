@@ -4,7 +4,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
         module: {
           rules: [
             {
-              test: './node_modules/@lottiefiles/lottie-player/dist/lottie-player.esm.js',
+              test: '/@lottiefiles/',
               use: loaders.null(),
             },
           ],
