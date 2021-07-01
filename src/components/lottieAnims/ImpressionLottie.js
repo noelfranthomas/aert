@@ -1,7 +1,13 @@
 import React from 'react';
-import '@lottiefiles/lottie-player';
 
 class impressionLottie extends React.Component {
+  componentDidMount() {
+    import("@lottiefiles/lottie-player")
+      .then((lottiePlayer) => {
+        this.lottiePlayer = lottiePlayer;
+      })
+      .catch((error) => console.error(error));
+  }
   render() {
     return (
       <div className="App">
