@@ -1,13 +1,7 @@
 import React from 'react';
+import '@lottiefiles/lottie-player';
 
 class impressionLottie extends React.Component {
-  componentDidMount() {
-    try {
-      this.UIkit = require('@lottiefiles/lottie-player');
-    } catch (e) {
-      console.error(e);
-    }
-  }
   render() {
     return (
       <div className="App">
