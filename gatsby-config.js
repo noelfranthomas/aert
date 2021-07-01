@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Argo`,
-        short_name: `argo`,
+        name: `Aert`,
+        short_name: `aert`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,

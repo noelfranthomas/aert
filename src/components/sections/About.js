@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
 
 import ImpressionLottie from '../lottieAnims/ImpressionLottie';
 import TrustLottie from '../lottieAnims/TrustLottie';
@@ -8,52 +7,17 @@ import GrowLottie from '../lottieAnims/GrowLottie';
 
 import { Section, Container } from '@components/global';
 
-const About = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_fast: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_learn: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
+function About(){
+    return(
       <Section id="about">
         <Container>
           <Grid>
             <div>
               <h2>First impressions matter.</h2>
               <p>
-                When people log onto your page, they see 
+                Every experience with your brand leaves a mark, especially the 
+                first one. Many times, the first interaction with a brand happens online. So,
+                make that first impression memorable with a great website.
               </p>
             </div>
             <Art>
@@ -67,8 +31,9 @@ const About = () => (
             <div>
               <h2>Build trust for your brand.</h2>
               <p>
-                Having a website that relays the nature and quality of 
-                your brand is essential to 
+                Leave a lasting impression by having the quality of your brand extend online. Enable
+                customers to interact with you online to build a relationship; and a community.
+
               </p>
             </div>
           </Grid>
@@ -76,8 +41,9 @@ const About = () => (
             <div>
               <h2>Grow and expand.</h2>
               <p>
-                Help your business flourish by reaching out to more people than before and,
-                more importantly, helping them stick. After all, 
+                Help your business flourish by reaching out to more people than ever before
+                with analytics that produce data that matter and float to the top of searches
+                with our SEO strategy.
               </p>
             </div>
             <Art>
@@ -86,9 +52,8 @@ const About = () => (
           </Grid>
         </Container>
       </Section>
-    )}
-  />
-);
+    )
+}
 
 const Grid = styled.div`
   display: grid;

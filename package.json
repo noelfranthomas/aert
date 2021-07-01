@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-argo",
+  "name": "gatsby-aert",
   "private": true,
-  "description": "Argo Website",
+  "description": "Aert Website",
   "version": "0.1.0",
   "author": "Noel Fran Thomas",
   "dependencies": {

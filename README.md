@@ -1,3 +1,3 @@
-# Argo
+# Aert
 
 Don't forget to run npm install first!

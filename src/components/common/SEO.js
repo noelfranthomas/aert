@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'A website created for Argo',
-  title: 'Argo',
+  description: 'A website created for Aert',
+  title: 'aert',
   url: '',
   author: 'noelfranthomas',
-  keywords: ['argo', 'portfolio', 'gatsby'],
+  keywords: ['aert', 'portfolio', 'gatsby'],
   img: '',
   twitterId: '',
   facebookId: '',

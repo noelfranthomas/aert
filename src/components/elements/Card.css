@@ -1,0 +1,85 @@
+:root {
+  --cardWidth: 270px;
+  --cardHeight: 320px;
+  --circleDiam: 130px;
+}
+
+.lightblue {
+  --bg-color: #A9D6FF;
+}
+ 
+.blue {
+  --bg-color: #7DC1FF;
+}
+
+.darkblue {
+  --bg-color: #5CB1FF;
+}
+  
+  .card {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    margin: 3rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+  }
+  
+  .circle {
+    width: var(--circleDiam);
+    height: var(--circleDiam);
+    border-radius: 50%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.3s ease;
+  }
+
+  .card:hover .circle {
+    background: var(--bg-color);
+    transform: translateY(-120px) scale(0.4) translateZ(0);
+  }
+
+  .circle h1 {  
+    z-index: 1;
+  }
+
+  .info{
+    position: absolute;
+    top: calc(var(--cardHeight) * 0.75);
+
+    width: calc(var(--cardWidth) - 0px);
+    height: var(--cardHeight);
+
+    opacity:0;
+    transition: 0.25s ease; 
+    text-align: center;
+  }
+
+  .header{
+    margin: 16px 0;
+  }
+
+  .card:hover .info {
+    opacity: 1;
+    top: calc(var(--cardHeight) * 0.1);
+    transform: scale(0.7);
+  }
+
+
+
+  
