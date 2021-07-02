@@ -6,12 +6,12 @@ import FaqItem from '@common/FaqItem';
 
 const FAQS = [
   {
-    title: 'Why choose Argo?',
+    title: 'Why choose Aert?',
     content: () => (
       <>
-        The team at Argo is well-versed in creating fast, responsive, and lightweight
+        The team at Aert is well-versed in creating fast, responsive, and lightweight
         websites in a timely manner. This allows local businesses to accomodate for 
-        as many users as soon as possible. At the same time, Argo offers competitive
+        as many users as soon as possible. At the same time, Aert offers competitive
         pricing and customer support.
       </>
     ),
@@ -30,7 +30,7 @@ const FAQS = [
     title: 'How quickly can I get a site up?',
     content: () => (
       <>
-        Argo's team is dedicated to our clients. However, the time it takes to design, 
+        Aert's team is dedicated to our clients. However, the time it takes to design, 
         code, and deploy each site may vary. Contact us to find out how we can help!
       </>
     ),
