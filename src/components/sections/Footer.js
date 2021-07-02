@@ -7,7 +7,6 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
 
 const SOCIAL = [
   {
@@ -61,11 +60,16 @@ const Footer = () => (
                 <ExternalLink href="http://absurd.design/">
                   absurd.design
                 </ExternalLink>
-                {` `}
-                and
+                ,
                 {` `}
                 <ExternalLink href="https://lottiefiles.com/pzlnvigbj5">
                   Guillaume Will
+                </ExternalLink>
+                {` `}
+                and
+                {` `}
+                <ExternalLink href="https://lottiefiles.com/user/466704">
+                  Caique Gomes
                 </ExternalLink>
               </span>
             </Copyright>

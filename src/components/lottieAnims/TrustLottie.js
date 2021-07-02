@@ -1,21 +1,15 @@
-import React from 'react';
-import '@lottiefiles/lottie-player';
+import React from "react";
+import Lottie from 'react-lottie-player';
+import lottieJson from './trust.json'
 
-class TrustLottie extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <lottie-player
-          loop
-          autoplay
-          ref={this.myRef} // 2. set the reference for the player
-          id="zeroLottie"
-          mode="normal"
-          src="https://assets7.lottiefiles.com/packages/lf20_3yxvybwr.json"
-        ></lottie-player>
-      </div>
-    );
+function TrustLottie() {
+    return(
+    <Lottie
+      loop
+      animationData={lottieJson}
+      play
+    />
+    )
   }
-}
 
 export default TrustLottie;
