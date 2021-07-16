@@ -1,3 +1,7 @@
 # Aert
 
-Don't forget to run npm install first!
+TODO
+
+Distribute assets to CDN
+update metadata
+

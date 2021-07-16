@@ -1,5 +1,5 @@
 :root {
-  --cardWidth: 270px;
+  --cardWidth: 250px;
   --cardHeight: 320px;
   --circleDiam: 130px;
 }
@@ -21,8 +21,7 @@
     height: var(--cardHeight);
     background: #fff;
     overflow: hidden;
-    border-radius: 5px;
-    margin: 3px;
+    border-radius: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +29,7 @@
     position: relative;
     transition: all 0.3s ease-out;
     text-decoration: none;
-    margin: 3rem;
+    margin-top: 3rem;
   }
   
   .card:hover {
