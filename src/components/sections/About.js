@@ -29,21 +29,20 @@ function About(){
               <TrustLottie />
             </Art>            
             <div>
-              <h2>Build trust for your brand.</h2>
+              <h2>Engage users.</h2>
               <p>
-                Leave a lasting impression by having the quality of your brand extend online. Enable
-                customers to interact with you online to build a relationship; and a community.
-
+                Create an application for your users to easily navigate your services. Whether it
+                be e-commerce, or safety, building one space for all these features streamlines the process
+                and lets users get where they need to be with fewer hiccups.
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and expand.</h2>
+              <h2>Take it to the next level.</h2>
               <p>
-                Help your business flourish by reaching out to more people than ever before
-                with analytics that produce data that matter and float to the top of searches
-                with our SEO strategy.
+                Let our team run analytics to find bottlenecks, and find out what can be optimized.
+                From there, we can build software solutions to reduce friction in different operations.
               </p>
             </div>
             <Art>

@@ -17,17 +17,17 @@ function Approach(){
               <Card number="1"
               color="lightblue"
               title="Plan"
-              desc="Togther we create a distinctive user experience to convey what your brand is really about."
+              desc="Togther we identify effective solutions for your business."
               />
                <Card number="2"
               color="blue"
               title="Build"
-              desc="Our team puts together the code, performs analytics, and optimizes the SEO strategy."
+              desc="Our team puts together the code, performs analytics, and conducts rigorous testing."
               />
                <Card number="3"
               color="darkblue"
               title="Launch"
-              desc="Customers can now view a blazing fast website (that looks good too)."
+              desc="We onboard the software, and provide the necessary training and documentation."
               />
             </div>
         </Container>

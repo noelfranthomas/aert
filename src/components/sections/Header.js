@@ -37,8 +37,20 @@ const Header = () => (
                 in Calgary.
               </h1>
               <br />
+              <br />
+              <br />
               <h3>
-                One website at a time.
+                
+                <div id="container-flip">
+                One 
+                  <div id="flip">
+                    <div><div>workflow</div></div>
+                    <div><div>website</div></div>
+                    <div><div>application</div></div>
+                  </div>
+                at a time.
+                </div>
+                 
               </h3>
             </Text>
           </Grid>
