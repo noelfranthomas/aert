@@ -44,9 +44,9 @@ const Header = () => (
                 <div id="container-flip">
                 One 
                   <div id="flip">
+                    <div><div>workflow</div></div>
                     <div><div>website</div></div>
                     <div><div>application</div></div>
-                    <div><div>workflow</div></div>
                   </div>
                 at a time.
                 </div>
