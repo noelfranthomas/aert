@@ -7,6 +7,43 @@ const normalize = `
 const GlobalStyles = createGlobalStyle`
   ${normalize};
 
+  #container-flip {
+    display:inline;
+  }
+  
+  #flip {
+    height:50px;
+    overflow:hidden;
+    margin-bottom: -12px;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-bottom: -20px;
+  }
+  
+  #flip > div > div {
+    align-items: center;
+    height:45px;
+    margin-bottom:45px;
+    display:inline-block;
+  }
+  
+  #flip div:first-child {
+    animation: show 12s linear infinite;
+  }
+  
+  @keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+  }
+  
+
   body {
     font-family: ${props => props.theme.font.secondary};
   }
