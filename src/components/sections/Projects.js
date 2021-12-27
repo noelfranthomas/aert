@@ -13,7 +13,7 @@ import { ReactComponent as AASEELogo } from '@images/logos/AASEEsimple.svg';
 const LOGOS = [
   {
     logo: SFSYLogo,
-    link: 'https://www.starsforshelteredyouth.com/',
+    link: 'https://www.starsforscholarlyyouth.com',
   },
   {
     logo: AASEELogo,
