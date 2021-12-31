@@ -8,9 +8,13 @@ import ExternalLink from '@common/ExternalLink';
 
 import { ReactComponent as SFSYLogo } from '@images/logos/SFSYsimple.svg';
 import { ReactComponent as AASEELogo } from '@images/logos/AASEEsimple.svg';
-
+import { ReactComponent as LILlogo } from '@images/logos/LILsimple.svg';
 
 const LOGOS = [
+  {
+    logo: LILlogo,
+    link: 'https://www.lillis.ca',
+  },
   {
     logo: SFSYLogo,
     link: 'https://www.starsforscholarlyyouth.com',
